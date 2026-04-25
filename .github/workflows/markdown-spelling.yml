@@ -1,0 +1,38 @@
+name: Markdown Spelling
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".github/tools/markdown/**"
+      - ".github/instructions/**"
+      - ".github/workflows/markdown-spelling.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "**/*.md"
+      - ".github/tools/markdown/**"
+      - ".github/instructions/**"
+      - ".github/workflows/markdown-spelling.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  spellcheck:
+    name: Spellcheck markdown files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install cspell
+        run: npm install --no-save cspell
+
+      - name: Spellcheck markdown
+        run: npx cspell lint --config .github/tools/markdown/cspell.json "**/*.md"
