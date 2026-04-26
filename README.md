@@ -79,11 +79,13 @@ Use `docs/decisions/decision-log.md` as the source of truth for accepted decisio
 
 - Beehive platform overview page: `docs/platform/beehive-overview.md`
 - Platform architecture diagram: `docs/platform/platform-diagram.md`
+- Platform personas and component capabilities: `docs/platform/platform-personas-guide.md`
 - Platform baseline architecture: `docs/platform/platform-architecture-guide.md`
 - Per-tool documentation template: `docs/platform/tool-document-template-guide.md`
 - Platform tool registry index: `docs/platform/platform-tools-index-guide.md`
 - Platform web UI component overview: `docs/platform/components/web-ui-component.md`
 - Platform web UI component docs: `docs/platform/components/`
+- Platform config component spec: `docs/platform/components/config.md`
 - GitHub component spec: `docs/platform/components/github-code-workflows-component.md`
 - GitHub onboarding workflow contract: `docs/platform/workflows/github-onboarding-workflow.md`
 - Provider-neutral module pattern: `docs/platform/modules/provider-neutral-module-pattern-guide.md`

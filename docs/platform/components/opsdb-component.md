@@ -73,3 +73,12 @@ Collection names above are baseline placeholders and can be adjusted when full m
 - Lifecycle status: planned.
 - Upgrade and compatibility notes: concrete schema and indexing strategy are defined after prioritized module list
   and complete database model are provided.
+
+## Persona Capability Coverage
+
+| Capability | Workstream Product Owner | Workstream Developer | Workstream Manager | DevOps Team |
+| --- | --- | --- | --- | --- |
+| Query platform configuration (read) | no | no | no | yes |
+| Manage module registry | no | no | no | yes |
+| View workflow registry | no | no | no | yes |
+| View request log | no | no | yes | yes |

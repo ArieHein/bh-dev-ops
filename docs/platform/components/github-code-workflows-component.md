@@ -140,3 +140,14 @@ This workflow is proposed by engineers, approved by DevOps Lead, and planned by 
 - Upgrade and compatibility notes:
   - current version assumes pre-invited GitHub users
   - later versions include user invite automation and baseline workflow file commit
+
+## Persona Capability Coverage
+
+| Capability | Workstream Product Owner | Workstream Developer | Workstream Manager | DevOps Team |
+| --- | --- | --- | --- | --- |
+| View repository details | yes | yes | yes | yes |
+| Initiate project onboarding request | yes | no | no | yes |
+| Propose new workflow | no | yes | no | yes |
+| Approve workflow request | no | no | no | yes |
+| Allocate workflow to planning | yes | no | no | no |
+| View onboarding status | yes | yes | no | yes |

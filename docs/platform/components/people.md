@@ -14,3 +14,13 @@
 
 - Uses people and project membership APIs.
 - Depends on Microsoft Entra-backed identity data and role assignment workflows.
+
+## Persona Capability Coverage
+
+| Capability | Workstream Product Owner | Workstream Developer | Workstream Manager | DevOps Team |
+| --- | --- | --- | --- | --- |
+| View platform users | yes | yes | yes | yes |
+| View project memberships | yes | yes | yes | yes |
+| Invite user to owned project | yes | no | yes | yes |
+| Assign project role to user | yes | no | yes | yes |
+| Remove user from project | yes | no | yes | yes |

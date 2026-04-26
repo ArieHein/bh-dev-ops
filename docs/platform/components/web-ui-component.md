@@ -1,6 +1,6 @@
 # Platform Web UI
 
-This document defines the Beehive platform web UI as a platform component rather than a standalone tool.
+This document defines the Beehive platform web UI as a platform component tool.
 
 ## Purpose
 
@@ -10,7 +10,7 @@ This document defines the Beehive platform web UI as a platform component rather
 
 ## Ownership
 
-- Owners: Product Owner Agent, Manager Agent, Azure DevTools Engineers
+- Owners: Product Owner Agent, Manager Agent, DevOps Lead, DevTools Engineers.
 - Status: planned
 
 ## Component Model
@@ -25,19 +25,19 @@ This document defines the Beehive platform web UI as a platform component rather
 - People: `docs/platform/components/people.md`
 - Services: `docs/platform/components/services.md`
 - Infrastructure: `docs/platform/components/infrastructure.md`
+- Config: `docs/platform/components/config.md`
 
 ## Shared Platform Coverage
 
-- UI: web application with left navigation and component-focused workflows.
-- API: required for project, people, service, and infrastructure interactions.
+- UI: web application with left menu navigation and component-focused workflows.
+- API: required for project, people, service, infrastructure and configuration interactions.
 - OpsDB usage: stores project metadata, visibility, favorites, memberships, requests, and status.
-- PowerShell module(s): platform modules for project, membership, service catalog, and infrastructure actions.
+- PowerShell module(s): platform modules for project, membership, service catalog, infrastructure actions and configuration management.
 - MCP tool(s): MCP tools for project queries, membership operations, and request workflows.
 
 ## Shared Navigation
 
 - Left navigation menu provides access to:
-  - dashboard
   - projects
   - people
   - services
@@ -61,7 +61,6 @@ This document defines the Beehive platform web UI as a platform component rather
 ## Reliability And Operations
 
 - Observability requirements: page usage metrics, request success rates, invitation events, and failure tracking.
-- Support runbook links: pending platform runbooks.
 
 ## Dependency And Lifecycle
 

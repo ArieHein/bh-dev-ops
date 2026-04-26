@@ -38,3 +38,7 @@ description: "Apply DevOps engineering operating model rules for CALMS, no-silo 
   - MCP tools call API by default and may call modules directly only when approved and documented
   - workflows call provider-neutral platform commands, not vendor-native commands directly
   - provider resolution may be explicit in request or resolved from OpsDB configuration
+  - persona definitions are owned by DevOps Product Owner in `docs/platform/platform-personas-guide.md`
+  - when DevOps Product Owner changes personas, update persona capability coverage in each applicable
+    component document under `docs/platform/components/`
+

@@ -14,3 +14,13 @@
 
 - Uses project metadata and favorites from platform API and OpsDB.
 - Requires fast summary views for dashboard cards and favorite project access.
+
+## Persona Capability Coverage
+
+| Capability | Workstream Product Owner | Workstream Developer | Workstream Manager | DevOps Team |
+| --- | --- | --- | --- | --- |
+| View summary of projects owned by | yes | no | yes | yes |
+| View summary of projects member of | no | yes | yes | yes |
+| View favorite projects | yes | yes | yes | yes |
+| View projects metrics | yes | read-only | yes | yes |
+| Add or remove project favorites | yes | yes | yes | yes |
