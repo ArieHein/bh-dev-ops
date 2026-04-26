@@ -87,4 +87,4 @@ Use `docs/decisions/decision-log.md` as the source of truth for accepted decisio
 - GitHub onboarding workflow contract: `docs/platform/workflows/github-onboarding-workflow.md`
 - Provider-neutral module pattern: `docs/platform/modules/provider-neutral-module-pattern-guide.md`
 - DNS provider routing pattern: `docs/platform/modules/dns-provider-routing-guide.md`
-- OpsDB MongoDB component spec: `docs/platform/components/opsdb-mongodb-component.md`
+- OpsDB component spec: `docs/platform/components/opsdb-component.md`
