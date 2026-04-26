@@ -56,4 +56,5 @@ Before finalizing markdown changes, validate locally with:
 npx markdownlint-cli2 --config .github/tools/markdown/markdownlint-cli2.jsonc "**/*.md"
 ```
 
-If linting fails, fix the markdown instead of suppressing rules unless there is a strong reason documented in a decision record.
+If linting fails, fix the markdown instead of suppressing rules unless there is a strong reason
+documented in a decision record.
