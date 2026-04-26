@@ -78,6 +78,7 @@ Use `docs/decisions/decision-log.md` as the source of truth for accepted decisio
 ## Platform Architecture Docs
 
 - Beehive platform overview page: `docs/platform/beehive-overview.md`
+- Platform architecture diagram: `docs/platform/platform-diagram.md`
 - Platform baseline architecture: `docs/platform/platform-architecture-guide.md`
 - Per-tool documentation template: `docs/platform/tool-document-template-guide.md`
 - Platform tool registry index: `docs/platform/platform-tools-index-guide.md`
