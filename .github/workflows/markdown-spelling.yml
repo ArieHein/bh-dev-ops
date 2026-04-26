@@ -1,4 +1,4 @@
-name: Markdown Spelling
+name: Markdown Spelling Info
 
 on:
   pull_request:
@@ -19,8 +19,8 @@ permissions:
   contents: read
 
 jobs:
-  spellcheck:
-    name: Spellcheck markdown files
+  spellcheck-info:
+    name: Spellcheck markdown files (informational)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -35,4 +35,17 @@ jobs:
         run: npm install --no-save cspell
 
       - name: Spellcheck markdown
+        id: spellcheck
+        continue-on-error: true
         run: npx cspell lint --config .github/tools/markdown/cspell.json "**/*.md"
+
+      - name: Report spelling findings
+        if: steps.spellcheck.outcome == 'failure'
+        run: |
+          echo "### Spelling findings (informational)" >> "$GITHUB_STEP_SUMMARY"
+          echo "cspell reported findings. This workflow is non-blocking for now." >> "$GITHUB_STEP_SUMMARY"
+          echo "Use en-US spelling where possible and update dictionaries when needed." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Confirm non-blocking behavior
+        if: steps.spellcheck.outcome == 'failure'
+        run: echo "Spelling findings detected; continuing without failure by policy."

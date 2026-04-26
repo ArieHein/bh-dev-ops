@@ -22,8 +22,10 @@ All markdown in this repository must be lint-clean.
 - Lint rules are in `.github/tools/markdown/markdownlint-cli2.jsonc`.
 - Spelling rules are in `.github/tools/markdown/cspell.json`.
 - Spelling dictionaries are in `.github/tools/markdown/dictionaries/`.
+- Spelling standard is en-US.
 - CI enforcement is in `.github/workflows/markdown-lint.yml`,
-  `.github/workflows/markdown-spelling.yml`, and `.github/workflows/markdown-filenames.yml`.
+  `.github/workflows/markdown-spelling.yml` (informational, non-blocking), and
+  `.github/workflows/markdown-filenames.yml`.
 - Authoring instructions are in `.github/instructions/markdown-quality.instructions.md` and
   `.github/instructions/markdown-spelling.instructions.md`.
 
