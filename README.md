@@ -16,10 +16,14 @@ DevOps multi-agent project foundation.
 
 All markdown in this repository must be lint-clean.
 
+- Markdown filenames must be lowercase.
+- The only allowed uppercase markdown filename is root `README.md`.
+
 - Lint rules are in `.github/tools/markdown/markdownlint-cli2.jsonc`.
 - Spelling rules are in `.github/tools/markdown/cspell.json`.
 - Spelling dictionaries are in `.github/tools/markdown/dictionaries/`.
-- CI enforcement is in `.github/workflows/markdown-lint.yml` and `.github/workflows/markdown-spelling.yml`.
+- CI enforcement is in `.github/workflows/markdown-lint.yml`,
+  `.github/workflows/markdown-spelling.yml`, and `.github/workflows/markdown-filenames.yml`.
 - Authoring instructions are in `.github/instructions/markdown-quality.instructions.md` and
   `.github/instructions/markdown-spelling.instructions.md`.
 
@@ -32,7 +36,7 @@ npx cspell lint --config .github/tools/markdown/cspell.json "**/*.md"
 
 ## Agent Team Baseline
 
-Team structure is defined in `docs/team/TEAM-STRUCTURE.md` and role files under `.github/agents/`:
+Team structure is defined in `docs/team/team-structure-guide.md` and role files under `.github/agents/`:
 
 - Manager
 - Product Owner
@@ -42,7 +46,7 @@ Team structure is defined in `docs/team/TEAM-STRUCTURE.md` and role files under 
 - Azure DevTools Engineer 2
 - DevOps Lead and Architect
 
-Engineering operating rules are now active and documented in `docs/team/TEAM-STRUCTURE.md`.
+Engineering operating rules are now active and documented in `docs/team/team-structure-guide.md`.
 
 ## Active Operating Model
 
@@ -71,14 +75,14 @@ Use `docs/decisions/decision-log.md` as the source of truth for accepted decisio
 
 ## Platform Architecture Docs
 
-- Beehive platform overview page: `docs/platform/BEEHIVE.md`
-- Platform baseline architecture: `docs/platform/PLATFORM-ARCHITECTURE.md`
-- Per-tool documentation template: `docs/platform/TOOL-DOCUMENT-TEMPLATE.md`
-- Platform tool registry index: `docs/platform/PLATFORM-TOOLS-INDEX.md`
-- Platform web UI component overview: `docs/platform/components/WEB-UI.md`
+- Beehive platform overview page: `docs/platform/beehive-overview.md`
+- Platform baseline architecture: `docs/platform/platform-architecture-guide.md`
+- Per-tool documentation template: `docs/platform/tool-document-template-guide.md`
+- Platform tool registry index: `docs/platform/platform-tools-index-guide.md`
+- Platform web UI component overview: `docs/platform/components/web-ui-component.md`
 - Platform web UI component docs: `docs/platform/components/`
-- GitHub component spec: `docs/platform/components/GITHUB-CODE-WORKFLOWS.md`
+- GitHub component spec: `docs/platform/components/github-code-workflows-component.md`
 - GitHub onboarding workflow contract: `docs/platform/workflows/github-onboarding-workflow.md`
-- Provider-neutral module pattern: `docs/platform/modules/PROVIDER-NEUTRAL-MODULE-PATTERN.md`
-- DNS provider routing pattern: `docs/platform/modules/DNS-PROVIDER-ROUTING.md`
-- OpsDB MongoDB component spec: `docs/platform/components/OPSDB-MONGODB.md`
+- Provider-neutral module pattern: `docs/platform/modules/provider-neutral-module-pattern-guide.md`
+- DNS provider routing pattern: `docs/platform/modules/dns-provider-routing-guide.md`
+- OpsDB MongoDB component spec: `docs/platform/components/opsdb-mongodb-component.md`

@@ -22,6 +22,6 @@ Beehive is the platform name for this DevOps multi-agent operating model and its
 
 ## Related Docs
 
-- `docs/platform/PLATFORM-ARCHITECTURE.md`
-- `docs/platform/PLATFORM-TOOLS-INDEX.md`
+- `docs/platform/platform-architecture-guide.md`
+- `docs/platform/platform-tools-index-guide.md`
 - `docs/decisions/decision-log.md`

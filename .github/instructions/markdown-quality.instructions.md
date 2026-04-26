@@ -14,6 +14,8 @@ description: "Enforce markdown lint quality for all markdown content. Use when c
 - Keep code fences typed where possible, for example `bash`, `yaml`, or `json`.
 - Avoid trailing spaces and duplicate headings in the same section scope.
 - Do not use hard tabs in markdown content; use spaces for indentation and wrapped lines.
+- Use lowercase markdown filenames for all files.
+- The only allowed uppercase markdown filename is root `README.md`.
 
 ## Active markdownlint Rules
 
@@ -54,6 +56,9 @@ Before finalizing markdown changes, validate locally with:
 
 ```bash
 npx markdownlint-cli2 --config .github/tools/markdown/markdownlint-cli2.jsonc "**/*.md"
+
+# lowercase filename check (allows only root README.md)
+git ls-files "*.md" | rg "[A-Z]" | rg -v "^README\.md$"
 ```
 
 If linting fails, fix the markdown instead of suppressing rules unless there is a strong reason

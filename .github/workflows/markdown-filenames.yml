@@ -1,0 +1,37 @@
+name: Markdown Filename Policy
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - ".github/instructions/**"
+      - ".github/workflows/markdown-filenames.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "**/*.md"
+      - ".github/instructions/**"
+      - ".github/workflows/markdown-filenames.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  filename-policy:
+    name: Enforce lowercase markdown filenames
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate markdown filenames
+        shell: bash
+        run: |
+          set -euo pipefail
+          violations=$(git ls-files '*.md' | grep -E '[A-Z]' | grep -Ev '^README\.md$' || true)
+          if [[ -n "$violations" ]]; then
+            echo "The following markdown files violate lowercase filename policy:"
+            echo "$violations"
+            echo "Only root README.md may contain uppercase letters."
+            exit 1
+          fi

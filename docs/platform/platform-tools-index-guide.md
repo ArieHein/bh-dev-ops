@@ -27,5 +27,5 @@ No standalone tool documents are currently registered in this index.
 - UI components are documented separately under `docs/platform/components/`.
 - GitHub onboarding and OpsDB are documented as platform components under `docs/platform/components/`.
 - Module architecture references:
-  - `docs/platform/modules/PROVIDER-NEUTRAL-MODULE-PATTERN.md`
-  - `docs/platform/modules/DNS-PROVIDER-ROUTING.md`
+  - `docs/platform/modules/provider-neutral-module-pattern-guide.md`
+  - `docs/platform/modules/dns-provider-routing-guide.md`
