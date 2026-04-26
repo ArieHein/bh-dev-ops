@@ -5,7 +5,8 @@
   "useGitignore": true,
   "dictionaries": [
     "platform-terms",
-    "engineering-terms"
+    "engineering-terms",
+    "exclusions"
   ],
   "dictionaryDefinitions": [
     {
@@ -16,6 +17,11 @@
     {
       "name": "engineering-terms",
       "path": "./dictionaries/engineering-terms.txt",
+      "addWords": true
+    },
+    {
+      "name": "exclusions",
+      "path": "./dictionaries/exclusions.txt",
       "addWords": true
     }
   ],
